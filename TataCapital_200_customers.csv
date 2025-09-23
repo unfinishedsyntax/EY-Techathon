@@ -1,0 +1,201 @@
+CustomerID,Name,Age,City,CurrentLoanOutstanding(₹),CreditScore,PreApprovedLimit(₹),SalaryMonthly(₹),ExistingLoanType
+C001,Rakesh Gupta,37,Mumbai,1892743,642,259015,61543,Home Loan
+C002,Arjun Gupta,36,Coimbatore,0,654,318226,62634,None
+C003,Neha Sharma,45,Mumbai,0,687,294866,84185,None
+C004,Rahul Prasad,37,Thiruvananthapuram,0,690,321143,65555,None
+C005,Rohit Chopra,31,Nagpur,0,670,243971,46439,None
+C006,Kajal Bose,21,Mumbai,1153277,620,201615,66688,Home Loan
+C007,Neha Malhotra,41,Noida,0,683,307456,62381,None
+C008,Kiran Malhotra,47,Kolkata,0,786,354127,49993,None
+C009,Vihaan Nair,28,Jaipur,174555,719,316130,45540,Personal Loan
+C010,Vijay Desai,26,Coimbatore,0,623,221135,55338,None
+C011,Arun Joshi,35,Bengaluru,361097,687,214449,16008,Personal Loan
+C012,Sonal Nair,34,Vadodara,0,781,470186,70465,None
+C013,Aditya Sharma,39,Ahmedabad,283160,738,232062,19085,Education Loan
+C014,Varsha Mehta,45,Kolkata,0,658,110570,31333,None
+C015,Ananya Nair,27,Hyderabad,0,588,57104,38803,None
+C016,Rohit Bose,24,Bengaluru,1952126,782,384645,79553,Home Loan
+C017,Vijay Mehta,37,Hyderabad,0,734,429024,97591,None
+C018,Anil Chopra,38,Ahmedabad,304806,801,385638,60794,Personal Loan
+C019,Kiran Sharma,32,Ahmedabad,492791,786,311185,54740,Personal Loan
+C020,Pooja Bose,46,Bengaluru,0,666,442849,63199,None
+C021,Kajal Malhotra,40,Pune,673094,717,440843,84889,Auto Loan
+C022,Arun Desai,44,Chennai,0,743,265303,49628,None
+C023,Rahul Chopra,24,Coimbatore,0,834,512064,91062,None
+C024,Kajal Chatterjee,34,Vadodara,0,772,320427,45268,None
+C025,Rahul Patel,45,Bhopal,0,740,389336,85593,None
+C026,Kiran Sharma,40,Kolkata,0,743,451914,87885,None
+C027,Sai Chatterjee,31,Thiruvananthapuram,0,695,210859,30031,None
+C028,Pooja Jain,39,Surat,0,767,312577,57267,None
+C029,Lina Kumar,39,Kolkata,187848,740,292478,32216,Auto Loan
+C030,Anil Malhotra,35,Kolkata,0,656,305626,68175,None
+C031,Sai Desai,26,Mumbai,479415,708,417455,87872,Personal Loan
+C032,Anil Prasad,36,Hyderabad,0,808,254005,15000,None
+C033,Vihaan Iyer,33,Bhopal,616880,689,147109,23162,Home Loan
+C034,Kiran Rao,33,Coimbatore,289536,794,533603,100837,Education Loan
+C035,Arun Kumar,36,Thiruvananthapuram,0,773,415951,64815,None
+C036,Aarav Gupta,25,Jaipur,129751,656,328188,84775,Personal Loan
+C037,Vikram Mehta,36,Delhi,0,805,371027,64452,None
+C038,Kajal Singh,31,Bengaluru,438400,636,234769,65702,Personal Loan
+C039,Kiran Chopra,34,Chennai,0,611,121150,52413,None
+C040,Kavya Chopra,34,Hyderabad,0,620,135211,75700,None
+C041,Varsha Jain,42,Nagpur,67254,851,478142,86832,Education Loan
+C042,Kiran Verma,36,Gurgaon,0,756,486800,91096,None
+C043,Sanjay Nair,22,Surat,736976,738,334938,67974,Auto Loan
+C044,Rahul Mehta,39,Bengaluru,0,645,313767,89120,None
+C045,Kajal Chopra,38,Ahmedabad,868234,779,541341,95426,Home Loan
+C046,Manish Sharma,46,Ahmedabad,0,837,348454,72326,None
+C047,Vivaan Malhotra,35,Bengaluru,0,793,359030,34578,None
+C048,Anil Saxena,43,Pune,0,718,222115,31748,None
+C049,Vijay Kapoor,40,Vadodara,0,777,423048,75319,None
+C050,Shreya Saxena,47,Nagpur,0,649,462928,121833,None
+C051,Vihaan Chatterjee,33,Jaipur,0,739,358961,73528,None
+C052,Ananya Sharma,39,Kolkata,0,625,307314,97508,None
+C053,Vijay Malhotra,24,Kolkata,0,652,297354,64136,None
+C054,Rohit Chopra,40,Surat,0,733,360119,64710,None
+C055,Sai Bose,32,Surat,0,753,469408,82850,None
+C056,Arun Singh,33,Surat,479451,774,400732,53688,Personal Loan
+C057,Vihaan Sharma,29,Coimbatore,236386,734,338525,44661,Education Loan
+C058,Arun Mehta,25,Hyderabad,0,817,332879,36307,None
+C059,Kavya Verma,41,Kanpur,2494544,751,305653,66284,Home Loan
+C060,Aarav Joshi,46,Noida,170262,632,123289,26214,Personal Loan
+C061,Vikram Chatterjee,25,Coimbatore,651863,786,459205,77374,Auto Loan
+C062,Rohit Iyer,38,Pune,662210,614,151212,36185,Auto Loan
+C063,Lina Sharma,47,Lucknow,0,656,276453,48104,None
+C064,Kajal Saxena,30,Bhopal,755660,729,316259,68745,Auto Loan
+C065,Vivaan Prasad,27,Bengaluru,2185588,804,382222,56629,Home Loan
+C066,Aditya Mehta,32,Kanpur,0,849,612909,124725,None
+C067,Deepak Kapoor,33,Ahmedabad,2325403,659,199749,52844,Home Loan
+C068,Aditya Chatterjee,39,Vadodara,383062,672,466948,109532,Home Loan
+C069,Anil Verma,31,Lucknow,0,820,378406,57053,None
+C070,Pooja Patel,22,Gurgaon,0,686,555797,118053,None
+C071,Arun Singh,28,Mumbai,0,703,260767,33002,None
+C072,Kajal Gupta,47,Bengaluru,0,761,450178,82477,None
+C073,Meena Bose,32,Chennai,308790,697,213832,33805,Personal Loan
+C074,Deepak Mehta,37,Jaipur,0,884,493546,66462,None
+C075,Ananya Chopra,47,Gurgaon,47663,733,403742,75346,Education Loan
+C076,Rakesh Prasad,29,Mumbai,99115,728,339608,81179,Auto Loan
+C077,Arun Gupta,39,Chennai,0,735,509279,110223,None
+C078,Deepak Gupta,32,Coimbatore,0,761,332919,61205,None
+C079,Vikram Jain,25,Pune,2448988,685,299697,79782,Home Loan
+C080,Rakesh Bose,35,Bhopal,0,653,389416,103873,None
+C081,Deepak Sharma,33,Bengaluru,102745,786,202679,22089,Personal Loan
+C082,Vivaan Kumar,44,Lucknow,27543,764,462883,85321,Personal Loan
+C083,Anil Rao,21,Surat,741095,594,308727,99739,Auto Loan
+C084,Aarav Gupta,25,Bengaluru,448127,705,352507,78677,Personal Loan
+C085,Arjun Chopra,39,Delhi,748646,691,264548,37220,Auto Loan
+C086,Arjun Chatterjee,35,Chennai,0,900,421278,56850,None
+C087,Sakshi Sharma,38,Jaipur,0,742,328624,57243,None
+C088,Rahul Gupta,33,Jaipur,445523,794,569321,112807,Personal Loan
+C089,Neha Jain,35,Chennai,2009891,846,433793,44881,Home Loan
+C090,Sai Rao,36,Nagpur,0,636,356812,75323,None
+C091,Vijay Malhotra,30,Nagpur,375249,609,197580,70095,Personal Loan
+C092,Shreya Mehta,34,Noida,0,836,164386,28797,None
+C093,Manish Gupta,29,Kanpur,39870,556,229796,99002,Personal Loan
+C094,Rahul Verma,31,Surat,0,708,411569,86441,None
+C095,Isha Mehta,22,Ahmedabad,0,821,364690,54445,None
+C096,Rohit Joshi,21,Lucknow,0,773,521826,96778,None
+C097,Aditya Bose,30,Jaipur,340160,724,274232,29500,Auto Loan
+C098,Isha Chopra,28,Lucknow,1625541,761,184302,17581,Home Loan
+C099,Anil Rao,35,Vadodara,459747,753,413007,65314,Home Loan
+C100,Vihaan Jain,34,Nagpur,0,650,318751,53203,None
+C101,Shreya Malhotra,44,Nagpur,61023,712,270574,47457,Auto Loan
+C102,Pooja Kapoor,40,Pune,0,685,277464,40319,None
+C103,Manish Chatterjee,21,Mumbai,0,666,298584,51856,None
+C104,Shreya Chopra,35,Pune,0,603,245535,56915,None
+C105,Aditya Malhotra,21,Thiruvananthapuram,0,759,414027,74061,None
+C106,Varsha Gupta,40,Gurgaon,0,765,371130,61930,None
+C107,Sanjay Chatterjee,24,Lucknow,0,802,492773,110786,None
+C108,Vikram Chopra,30,Chennai,0,820,325785,49605,None
+C109,Sanjay Joshi,35,Hyderabad,470846,712,307093,71968,Home Loan
+C110,Lina Kumar,33,Gurgaon,0,622,433543,73561,None
+C111,Neha Kapoor,44,Thiruvananthapuram,54809,688,312830,72811,Auto Loan
+C112,Ananya Verma,38,Bhopal,0,665,214690,48586,None
+C113,Deepak Rao,24,Bengaluru,0,794,415348,78387,None
+C114,Sanjay Jain,44,Lucknow,0,701,145922,15000,None
+C115,Kiran Mehta,42,Gurgaon,0,876,438346,66687,None
+C116,Rohit Patel,46,Mumbai,0,897,415008,50918,None
+C117,Kavya Jain,38,Bengaluru,0,652,380962,99215,None
+C118,Deepak Kapoor,38,Pune,377359,821,259570,21728,Auto Loan
+C119,Pooja Mehta,35,Chennai,1564133,780,361138,53655,Home Loan
+C120,Kiran Gupta,33,Nagpur,0,648,478482,89538,None
+C121,Shreya Prasad,22,Surat,0,746,301221,63611,None
+C122,Rahul Gupta,33,Surat,0,677,262912,36298,None
+C123,Ananya Prasad,33,Coimbatore,175286,745,395302,63117,Education Loan
+C124,Deepak Desai,27,Thiruvananthapuram,407971,699,401622,83684,Personal Loan
+C125,Neha Chopra,37,Surat,48732,682,264796,65376,Personal Loan
+C126,Kavya Desai,28,Noida,305205,706,195186,29147,Personal Loan
+C127,Anil Prasad,31,Visakhapatnam,1461466,671,210244,44533,Home Loan
+C128,Aditya Iyer,35,Ahmedabad,0,645,166001,55523,None
+C129,Priya Chopra,39,Bengaluru,0,668,292116,49490,None
+C130,Rahul Joshi,38,Chennai,2166382,647,209818,58123,Home Loan
+C131,Neha Malhotra,29,Coimbatore,0,779,192030,15000,None
+C132,Vivaan Verma,27,Nagpur,0,765,412452,76795,None
+C133,Kiran Kapoor,33,Mumbai,125186,659,170851,41111,Personal Loan
+C134,Pooja Saxena,32,Mumbai,1621796,629,243942,71498,Home Loan
+C135,Pooja Chatterjee,29,Coimbatore,622203,670,140051,37961,Auto Loan
+C136,Sonal Mehta,25,Visakhapatnam,0,765,514185,91383,None
+C137,Neha Saxena,52,Mumbai,0,748,323932,49399,None
+C138,Sanjay Joshi,45,Hyderabad,101264,825,249004,15000,Education Loan
+C139,Sonal Chopra,35,Mumbai,649991,574,210003,85993,Auto Loan
+C140,Sanjay Kumar,33,Bengaluru,1144789,623,202019,49572,Home Loan
+C141,Ananya Rao,39,Delhi,0,845,530487,68630,None
+C142,Priya Verma,33,Surat,0,772,403688,67483,None
+C143,Kiran Joshi,42,Noida,157541,764,407152,62855,Personal Loan
+C144,Anil Singh,28,Visakhapatnam,0,656,331390,71493,None
+C145,Lina Sharma,34,Jaipur,0,706,232683,43107,None
+C146,Aditya Sharma,37,Mumbai,482272,570,141080,46300,Home Loan
+C147,Aarav Jain,41,Chennai,0,778,298947,50577,None
+C148,Kavya Gupta,26,Vadodara,143070,664,152789,15000,Auto Loan
+C149,Anil Nair,30,Hyderabad,159639,766,460034,102625,Education Loan
+C150,Manish Gupta,32,Hyderabad,1292501,649,383414,78297,Home Loan
+C151,Aarav Iyer,30,Vadodara,175002,771,367385,76467,Education Loan
+C152,Pooja Verma,35,Bengaluru,34060,777,509403,107732,Personal Loan
+C153,Rahul Gupta,21,Gurgaon,163026,769,341365,39797,Personal Loan
+C154,Vihaan Kapoor,49,Delhi,0,721,181495,25493,None
+C155,Neha Nair,38,Bengaluru,0,559,46738,15000,None
+C156,Priya Kumar,44,Nagpur,545266,691,251297,43129,Home Loan
+C157,Sakshi Desai,33,Chennai,0,753,428433,91359,None
+C158,Vijay Prasad,45,Noida,292933,790,429263,85703,Education Loan
+C159,Kiran Saxena,44,Surat,0,695,395883,75050,None
+C160,Vijay Kapoor,39,Noida,0,671,290876,15000,None
+C161,Rahul Singh,43,Noida,2361924,821,54408,53884,Home Loan
+C162,Ananya Kapoor,31,Thiruvananthapuram,2280154,790,538038,99647,Home Loan
+C163,Kavya Malhotra,28,Hyderabad,0,595,47463,33883,None
+C164,Sakshi Bose,44,Lucknow,0,614,296019,85342,None
+C165,Sonal Bose,35,Coimbatore,0,705,547398,131089,None
+C166,Rohit Singh,34,Ahmedabad,745275,761,499941,109554,Auto Loan
+C167,Kiran Mehta,29,Visakhapatnam,367320,831,517965,97546,Auto Loan
+C168,Shreya Kumar,30,Bengaluru,0,687,309025,56768,None
+C169,Pooja Mehta,51,Gurgaon,380388,817,458839,78098,Auto Loan
+C170,Lina Prasad,29,Jaipur,0,657,122779,39697,None
+C171,Vijay Chopra,24,Lucknow,0,696,255399,32623,None
+C172,Ananya Bose,45,Gurgaon,0,612,263211,76792,None
+C173,Vihaan Verma,39,Lucknow,0,795,332964,61069,None
+C174,Lina Rao,21,Pune,0,674,196260,48188,None
+C175,Kavya Bose,32,Vadodara,671019,626,108814,37336,Auto Loan
+C176,Vikram Gupta,35,Pune,0,730,316554,48060,None
+C177,Sakshi Rao,43,Gurgaon,0,688,236229,56759,None
+C178,Lina Patel,21,Noida,0,681,317150,64181,None
+C179,Vivaan Chopra,22,Gurgaon,1024690,817,534340,82523,Home Loan
+C180,Varsha Saxena,21,Kolkata,612288,623,332070,96152,Auto Loan
+C181,Kavya Saxena,36,Surat,0,709,334672,58629,None
+C182,Vivaan Bose,37,Visakhapatnam,0,786,462714,66590,None
+C183,Aditya Joshi,40,Visakhapatnam,0,770,525048,96788,None
+C184,Rakesh Sharma,26,Chennai,0,886,275697,22287,None
+C185,Kajal Iyer,35,Bengaluru,672327,703,353192,89457,Home Loan
+C186,Kiran Chatterjee,31,Thiruvananthapuram,226111,737,418833,70866,Personal Loan
+C187,Kiran Prasad,22,Kanpur,0,736,229490,42486,None
+C188,Ananya Iyer,28,Vadodara,2226580,843,271470,23255,Home Loan
+C189,Sonal Sharma,35,Thiruvananthapuram,2137878,802,514593,83699,Home Loan
+C190,Kiran Verma,29,Pune,0,643,214796,21163,None
+C191,Aditya Rao,35,Ahmedabad,0,718,227399,40600,None
+C192,Aditya Rao,36,Mumbai,0,716,236300,55909,None
+C193,Manish Jain,40,Visakhapatnam,0,624,265969,91428,None
+C194,Rahul Iyer,30,Gurgaon,363837,744,367288,65460,Auto Loan
+C195,Sanjay Mehta,41,Noida,338277,605,276307,93785,Personal Loan
+C196,Sanjay Verma,37,Nagpur,0,539,157236,63275,None
+C197,Rahul Patel,35,Noida,1426476,649,326753,89567,Home Loan
+C198,Sai Iyer,37,Thiruvananthapuram,347881,685,371688,100097,Auto Loan
+C199,Vikram Desai,31,Kolkata,0,619,236381,69963,None
+C200,Vikram Joshi,38,Noida,0,678,404477,59374,None
