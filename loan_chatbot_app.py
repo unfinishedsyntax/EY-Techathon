@@ -4,15 +4,60 @@ import random
 import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+import requests
 
-# Load dataset
+# ----------------------------
+# Config
+# ----------------------------
 DATA_FILE = "TataCapital_200_customers.csv"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")  # set in env or Streamlit secrets
+DEFAULT_MODEL = "openai/gpt-4o-mini"  # can switch to "anthropic/claude-3-sonnet" or "meta-llama/llama-3-8b-instruct"
+
+# ----------------------------
+# Load Dataset
+# ----------------------------
 if os.path.exists(DATA_FILE):
     df = pd.read_csv(DATA_FILE)
 else:
-    df = pd.DataFrame(columns=["CustomerID","Name","Age","City","Employment","Salary","EMI","CreditScore","PreApprovedLimit(₹)"])
+    df = pd.DataFrame(columns=[
+        "CustomerID","Name","Age","City","Employment",
+        "Salary","EMI","CreditScore","PreApprovedLimit(₹)"
+    ])
 
+# ----------------------------
+# OpenRouter LLM API
+# ----------------------------
+def llm_response(user_query, model=DEFAULT_MODEL):
+    """Fallback to LLM via OpenRouter"""
+    try:
+        headers = {
+            "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+            "HTTP-Referer": "http://localhost:8501",   # replace with your hosted app URL
+            "X-Title": "TataCapital Loan Chatbot"
+        }
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": "You are a helpful Tata Capital personal loan assistant. Be polite, concise, and explain loans clearly."},
+                {"role": "user", "content": user_query}
+            ]
+        }
+        resp = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=payload)
+        resp.raise_for_status()
+        return resp.json()["choices"][0]["message"]["content"]
+    except Exception as e:
+        return f"(LLM error: {e})"
+
+# ----------------------------
+# Streamlit UI
+# ----------------------------
 st.title("💬 Tata Capital - Personal Loan Chatbot")
+
+# Select model (user can switch)
+model_choice = st.sidebar.selectbox(
+    "Choose LLM Model",
+    ["openai/gpt-4o-mini", "openai/gpt-4o", "anthropic/claude-3-sonnet", "meta-llama/llama-3-8b-instruct"]
+)
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -23,11 +68,13 @@ if "new_customer" not in st.session_state:
 def add_message(sender, text):
     st.session_state.messages.append({"sender": sender, "text": text})
 
-# Chat display
+# Display chat history
 for m in st.session_state.messages:
     st.chat_message(m["sender"]).markdown(m["text"])
 
+# ----------------------------
 # Helper: Generate sanction letter PDF
+# ----------------------------
 def generate_sanction_letter(name, amount, tenure, emi):
     file_name = f"Sanction_Letter_{name}.pdf"
     c = canvas.Canvas(file_name, pagesize=letter)
@@ -40,7 +87,9 @@ def generate_sanction_letter(name, amount, tenure, emi):
     c.save()
     return file_name
 
-# User input
+# ----------------------------
+# Chat Input
+# ----------------------------
 if prompt := st.chat_input("Ask about a personal loan..."):
     add_message("user", prompt)
     st.chat_message("user").markdown(prompt)
@@ -51,7 +100,7 @@ if prompt := st.chat_input("Ask about a personal loan..."):
     if "loan" in prompt.lower():
         response = "Sure, I can help with that. Can I know your Customer ID to check pre-approved offers?"
 
-    # Step 2: CustomerID input
+    # Step 2: CustomerID check
     elif prompt.startswith("C"):
         if prompt in df["CustomerID"].values:
             cust = df[df["CustomerID"] == prompt].iloc[0]
@@ -77,7 +126,7 @@ if prompt := st.chat_input("Ask about a personal loan..."):
                 submitted = st.form_submit_button("Submit")
 
                 if submitted:
-                    # Assign mock credit score
+                    # Mock credit score
                     credit_score = random.randint(650,850)
                     pre_limit = 1.5 * salary
 
@@ -101,7 +150,7 @@ if prompt := st.chat_input("Ask about a personal loan..."):
 
     # Step 3: Salary Slip Upload
     elif "upload" in prompt.lower() or "salary slip" in prompt.lower():
-        # Underwriting example
+        # Example underwriting
         loan_amount = 200000
         tenure = 24
         salary = 50000
@@ -118,7 +167,8 @@ if prompt := st.chat_input("Ask about a personal loan..."):
             response = "Based on underwriting rules, your loan is not approved automatically. It will be sent for manual review."
 
     else:
-        response = "I'm here to guide you through Tata Capital personal loans. Try asking about 'loan offers'."
+        # Fallback → OpenRouter LLM
+        response = llm_response(prompt, model_choice)
 
     add_message("assistant", response)
     st.chat_message("assistant").markdown(response)
