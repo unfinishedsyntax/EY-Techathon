@@ -6,16 +6,12 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import requests
 
-# ----------------------------
 # Config
-# ----------------------------
 DATA_FILE = "TataCapital_200_customers.csv"
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")  # set in env or Streamlit secrets
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")  
 DEFAULT_MODEL = "openai/gpt-4o-mini"  # can switch to "anthropic/claude-3-sonnet" or "meta-llama/llama-3-8b-instruct"
 
-# ----------------------------
 # Load Dataset
-# ----------------------------
 if os.path.exists(DATA_FILE):
     df = pd.read_csv(DATA_FILE)
 else:
@@ -23,10 +19,7 @@ else:
         "CustomerID","Name","Age","City","Employment",
         "Salary","EMI","CreditScore","PreApprovedLimit(₹)"
     ])
-
-# ----------------------------
 # OpenRouter LLM API
-# ----------------------------
 def llm_response(user_query, model=DEFAULT_MODEL):
     """Fallback to LLM via OpenRouter"""
     try:
@@ -48,9 +41,7 @@ def llm_response(user_query, model=DEFAULT_MODEL):
     except Exception as e:
         return f"(LLM error: {e})"
 
-# ----------------------------
 # Streamlit UI
-# ----------------------------
 st.title("💬 Tata Capital - Personal Loan Chatbot")
 
 # Select model (user can switch)
@@ -72,9 +63,7 @@ def add_message(sender, text):
 for m in st.session_state.messages:
     st.chat_message(m["sender"]).markdown(m["text"])
 
-# ----------------------------
 # Helper: Generate sanction letter PDF
-# ----------------------------
 def generate_sanction_letter(name, amount, tenure, emi):
     file_name = f"Sanction_Letter_{name}.pdf"
     c = canvas.Canvas(file_name, pagesize=letter)
@@ -87,9 +76,8 @@ def generate_sanction_letter(name, amount, tenure, emi):
     c.save()
     return file_name
 
-# ----------------------------
+
 # Chat Input
-# ----------------------------
 if prompt := st.chat_input("Ask about a personal loan..."):
     add_message("user", prompt)
     st.chat_message("user").markdown(prompt)
