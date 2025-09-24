@@ -3,4 +3,5 @@ pandas
 reportlab
 numpy
 faker
+requests
 
